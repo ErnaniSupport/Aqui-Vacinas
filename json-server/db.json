@@ -1,0 +1,17 @@
+{
+  "vacinas": [
+    {
+      "id": "1",
+      "vacina": "Hepatite B recombinante",
+      "protecao": "Hepatite B",
+      "estoque": true
+    },
+
+    {
+      "id": "2",
+      "vacina": "Difteria e Tétano (dT Adulto)",
+      "protecao": "Difteria e Tétano",
+      "estoque": true
+    }
+  ]
+}

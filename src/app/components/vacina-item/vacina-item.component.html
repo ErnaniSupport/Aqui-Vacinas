@@ -1,0 +1,9 @@
+<div class="vacina"
+    (dblclick)="onToggle(vacina)"
+    [ngClass]="{reminder: vacina.estoque}"
+>        
+    <h3>{{vacina.vacina}}
+        <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(vacina)"></fa-icon>
+    </h3>
+    <p>{{vacina.protecao}}</p>
+</div>

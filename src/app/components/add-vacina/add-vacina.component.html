@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+    <label for="text">Vacina:</label>
+        <input  type="text" name="text" class="form-control" placeholder="Nome da vacina" id="text"
+                [(ngModel)]="vacina">
+    
+    
+         <label for="text">Proteção:</label>
+        <input  
+        type="text" 
+        name="text" 
+        class="form-control" 
+        placeholder="Adicionar Proteção"
+        id="text"
+        [(ngModel)]="protecao">
+    
+        
+    <input type="submit" value="Salvar Vacina" class="btn btn-block mb-4">
+    </div>
+</form>

@@ -1,0 +1,8 @@
+<h2>Lista de Vacinas Novo</h2>
+
+<app-add-vacina (onAddVacina)="AddVacina($event)"></app-add-vacina>
+<app-vacina-item *ngFor="let vacina of vacinas" 
+[vacina]="vacina" 
+(onDeleteVacina)="deleteVacina($event)"
+>
+</app-vacina-item>
