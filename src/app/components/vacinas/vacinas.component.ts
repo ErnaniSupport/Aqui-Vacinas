@@ -16,7 +16,7 @@ export class VacinasComponent implements OnInit {
 
   // Lista de Vacinas (Tarefas)
   vacinas: Vacina[] = [];
-  taskService: any;
+  
 
   constructor(private vacinaService: VacinasService) { }
 
@@ -28,16 +28,16 @@ export class VacinasComponent implements OnInit {
     });
   }
 
-  AddTask(vacina: Vacina){
-    this.vacinaService.addVacina(vacina).subscribe(() => {
+  AddVacina(vacina: Vacina){
+    this.vacinaService.addVacina(vacina).subscribe((vacina) => {
       this.vacinas.push(vacina);
     });
   }
-
   
+    
   deleteVacina(vacina: Vacina) {
     this.vacinaService.deleteVacina(vacina).subscribe(() =>
-      (this.vacinas = this.vacinas.filter((v) => v.id == vacina.id)));
+      (this.vacinas = this.vacinas.filter((v) => v.id !== vacina.id)));
   }
 
   toggleEstoque(vacina: Vacina) {

@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Vacina } from '../../../Vacina';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
 
@@ -17,10 +17,8 @@ export class VacinaItemComponent {
   @Output() onDeleteVacina = new EventEmitter<Vacina>();
   @Output() onToggleEstoque = new EventEmitter<Vacina>();
   
-
-  faTimes = faTimes
-  //onToggleConcluido: any;
-
+  faTrash = faTrash
+    
   onDelete(vacina: Vacina){
     this.onDeleteVacina.emit(vacina);
   }

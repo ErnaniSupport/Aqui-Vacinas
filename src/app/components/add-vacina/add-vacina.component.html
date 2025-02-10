@@ -1,20 +1,26 @@
-<form (ngSubmit)="onSubmit()">
-    <div>
-    <label for="text">Vacina:</label>
-        <input  type="text" name="text" class="form-control" placeholder="Nome da vacina" id="text"
-                [(ngModel)]="vacina">
-    
-    
-         <label for="text">Proteção:</label>
-        <input  
-        type="text" 
-        name="text" 
-        class="form-control" 
-        placeholder="Adicionar Proteção"
-        id="text"
-        [(ngModel)]="protecao">
-    
-        
-    <input type="submit" value="Salvar Vacina" class="btn btn-block mb-4">
-    </div>
-</form>
+<div class="vacina-container">
+    <app-button
+        [text]="mostrarAddVacina ? 'Fechar' : 'Adicionar Vacina'"
+        [color]="mostrarAddVacina ? 'red' : 'green'"
+        (btnClick)="AlteraVisualizacao(!mostrarAddVacina)">
+    </app-button>
+
+    <form (ngSubmit)="onSubmit()" *ngIf="mostrarAddVacina" class="add-form">
+        <div class="form-group">
+            <label for="vacina">Vacina:</label>
+            <input type="text" id="vacina" class="form-control" placeholder="Nome da vacina" [(ngModel)]="vacina" name="vacina">
+        </div>
+
+        <div class="form-group">
+            <label for="protecao">Proteção:</label>
+            <input type="text" id="protecao" class="form-control" placeholder="Adicionar Proteção" [(ngModel)]="protecao" name="protecao">
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="text" id="quantidade" class="form-control" placeholder="Quantidade em Estoque" [(ngModel)]="quantidade" name="quantidade">
+        </div>
+
+        <button type="submit" class="btn btn-success btn-block">Salvar Vacina</button>
+    </form>
+</div>

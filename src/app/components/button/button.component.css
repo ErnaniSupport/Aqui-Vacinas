@@ -1,5 +1,5 @@
 .vacina-container {
-    max-width: 950px;
+    max-width: 400px;
     margin: 20px auto;
     padding: 20px;
     background: #f9f9f9;
@@ -8,7 +8,7 @@
 }
 
 .form-group {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -32,7 +32,7 @@ label {
 }
 
 .btn-success {
-    background-color: #28a745;
+    background-color: #218838;
     border: none;
 }
 

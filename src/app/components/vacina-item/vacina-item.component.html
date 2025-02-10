@@ -1,9 +1,16 @@
-<div class="vacina"
-    (dblclick)="onToggle(vacina)"
-    [ngClass]="{reminder: vacina.estoque}"
->        
-    <h3>{{vacina.vacina}}
-        <fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(vacina)"></fa-icon>
+<div class="vacina" (dblclick)="onToggle(vacina)" [ngClass]="{reminder: vacina.estoque}">
+    <h3>
+        {{vacina.vacina}}<fa-icon [icon]="faTrash" [ngStyle]="{'font-size': '20px', 'color': 'red'}"
+            (click)="onDelete(vacina)"></fa-icon>
     </h3>
-    <p>{{vacina.protecao}}</p>
+
+    <h5>
+        {{vacina.protecao}}
+    </h5>
+    <h5>
+        Quantidade em estoque: {{vacina.quantidade}}
+    </h5>
 </div>
+
+
+  
