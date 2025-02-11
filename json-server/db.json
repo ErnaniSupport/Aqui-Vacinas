@@ -1,39 +1,44 @@
 {
   "vacinas": [
     {
-      "id": "b09d",
-      "vacina": "BCG",
-      "protecao": "Protege contra a tuberculose",
-      "estoque": true,
-      "quantidade": "20"
-    },
-    {
       "id": "5e51",
       "vacina": "Hepatite B:",
       "protecao": " Protege contra a hepatite B",
       "estoque": true,
-      "quantidade": "50"
+      "quantidade": 30,
+      "novaQuantidade": 30
     },
     {
       "id": "c6ad",
       "vacina": "Penta: ",
       "protecao": "Protege contra poliomielite, pneumocócica 10V e rotavírus",
       "estoque": true,
-      "quantidade": "50"
+      "quantidade": 10,
+      "novaQuantidade": 10
     },
     {
       "id": "da60",
       "vacina": "VOP (vacina oral poliomielite)",
       "protecao": "Protege contra a poliomielite (paralisia infantil)",
       "estoque": true,
-      "quantidade": "20"
+      "quantidade": 10,
+      "novaQuantidade": 10
     },
     {
       "id": "7e6d",
       "vacina": "Tríplice viral (SRC)",
       "protecao": "Protege contra sarampo, rubéola e caxumba",
       "estoque": true,
-      "quantidade": "20"
+      "quantidade": 10,
+      "novaQuantidade": 10
+    },
+    {
+      "id": "b08d",
+      "vacina": "Vacina BCG (Bacillus De Calmette-Guérin)",
+      "protecao": "prevenção de formas graves de tuberculose (miliar e meníngea).",
+      "estoque": false,
+      "quantidade": 12,
+      "novaQuantidade": 12
     }
   ]
 }

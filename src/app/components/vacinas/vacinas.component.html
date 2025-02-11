@@ -1,8 +1,25 @@
-<h1>Bem-vindo ao Sistema de Vacinação</h1>
-<h4>sua vacinação com facilidade e segurança.</h4>
+<h1>Bem-vindo ao Sistema de <p>Gerenciamento de Vacinas</p></h1>
+<h4>Sua vacinação com facilidade e segurança e Garantia</h4>
 
+<!-- Componente para adicionar novas vacinas -->
 <app-add-vacina (onAddVacina)="AddVacina($event)"></app-add-vacina>
-<app-vacina-item *ngFor="let vacina of vacinas" [vacina]="vacina" (onDeleteVacina)="deleteVacina($event)"
-    (onToggleEstoque)="toggleEstoque($event)">
-</app-vacina-item>
 
+<!-- Lista de vacinas -->
+<div *ngFor="let vacina of vacinas" class="vacina-container">
+    <app-vacina-item [vacina]="vacina" (onDeleteVacina)="deleteVacina($event)"
+        (onToggleEstoque)="toggleEstoque($event)">
+    </app-vacina-item>
+
+    <!-- Input para atualizar a quantidade -->
+    <div class="quantidade-container">
+        <label for="quantidade-{{vacina.id}}">Quantidade:</label>
+        <input id="quantidade-{{vacina.id}}" type="number" [(ngModel)]="vacina.novaQuantidade" min="0"
+            (change)="validarQuantidade(vacina)" />
+            <button 
+            (click)="updateQuantidade(vacina, vacina.novaQuantidade ?? 0)" 
+            [disabled]="vacina.novaQuantidade == null || vacina.novaQuantidade <= 0">
+            Atualizar
+          </button>
+          
+    </div>
+</div>

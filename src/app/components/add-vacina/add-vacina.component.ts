@@ -36,6 +36,7 @@ export class AddVacinaComponent {
     //console.log(this.vacina, this.protecao);
 
     const novaVacina = {
+      
       vacina: this.vacina,
       protecao: this.protecao,
       estoque: this.estoque,

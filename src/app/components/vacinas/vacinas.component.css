@@ -1,2 +1,70 @@
-
+/* Estilo para a seção de quantidade */
+.quantidade-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adiciona espaço entre os itens */
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 400px; /* Limita a largura máxima para não ficar muito largo */
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para o label de quantidade */
+  .quantidade-container label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para o campo de input */
+  .quantidade-container input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80px;
+    transition: all 0.3s ease;
+  }
+  
+  .quantidade-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Estilo para o botão de atualizar */
+  .quantidade-container button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 1;
+  }
+  
+  /* Efeito de hover no botão */
+  .quantidade-container button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Efeito de desabilitado no botão */
+  .quantidade-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* Alinha o botão à direita */
+  .quantidade-container button {
+    margin-left: auto;
+  }
+  
 

@@ -3,5 +3,7 @@ export interface Vacina{
     vacina: string,
     protecao: string,
     estoque: boolean,
-    quantidade: number
+    quantidade?: number; //  Adiciona a propriedade quantidade
 }
+
+
