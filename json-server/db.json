@@ -5,16 +5,16 @@
       "vacina": "Hepatite B:",
       "protecao": " Protege contra a hepatite B",
       "estoque": true,
-      "quantidade": 30,
-      "novaQuantidade": 30
+      "quantidade": 25,
+      "novaQuantidade": 25
     },
     {
       "id": "c6ad",
       "vacina": "Penta: ",
       "protecao": "Protege contra poliomielite, pneumocócica 10V e rotavírus",
       "estoque": true,
-      "quantidade": 10,
-      "novaQuantidade": 10
+      "quantidade": 14,
+      "novaQuantidade": 14
     },
     {
       "id": "da60",
